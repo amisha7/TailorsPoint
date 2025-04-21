@@ -1,0 +1,716 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="user_User" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Flatize - Shop HTML5 Responsive Template">
+    <meta name="author" content="pixelgeeklab.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tailorspoint </title>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="css/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Owl Carousel Assets -->
+    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="vendor/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet">
+
+    <!-- bxslider -->
+    <link href="vendor/bxslider/jquery.bxslider.css" rel="stylesheet">
+    <!-- flexslider -->
+    <link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+
+    <!-- Theme -->
+    <link href="css/theme-animate.css" rel="stylesheet">
+    <link href="css/theme-elements.css" rel="stylesheet">
+    <link href="css/theme-blog.css" rel="stylesheet">
+    <link href="css/theme-shop.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+
+
+
+    <!-- Style Switcher-->
+    <link rel="stylesheet" href="style-switcher/css/style-switcher.css">
+    <link href="css/colors/cyan/style.html" rel="stylesheet" id="layoutstyle">
+
+    <!-- Theme Responsive-->
+    <link href="css/theme-responsive.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="/path/to/jquery.blink.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            blinkeffect('#txtblank');
+
+        })
+        function blinkeffect(selector) {
+
+            $(selector).fadeOut('slow', function () {
+                $(this).fadeIn('slow', function () {
+                    blinkeffect(this);
+
+
+                });
+            });
+        }
+
+
+
+    </script>
+
+
+    <style>
+        nav.heta {
+            -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
+            animation: background 5s cubic-bezier(1,0,0,1) infinite;
+        }
+
+
+        @-webkit-keyframes background {
+            0% {
+                background-color: #95b9c7;
+            }
+
+            33% {
+                background-color: #b38481;
+            }
+
+            67% {
+                background-color: #669099;
+            }
+
+            100% {
+                background-color: #848B79;
+            }
+        }
+
+        @keyframes background {
+            0% {
+                background-color: #95b9c7;
+            }
+
+            33% {
+                background-color: #b38481;
+            }
+
+            67% {
+                background-color: #669099;
+            }
+
+            100% {
+                background-color: #848B79;
+            }
+        }
+
+        .hetashah:hover {
+            color: deeppink;
+            margin-top: 2px;
+            font-size: 19px;
+        }
+    </style>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="page">
+                <header>
+                    <div id="top">
+                        <div class="container">
+                            <div id="txtblank">
+                                <asp:Label ID="lbl_tag" runat="server" Font-Size="Large" Text="Tailorspoint Now At Your Home  !!" CssClass="pull-left text-note"></asp:Label>
+                            </div>
+                            <p class="pull-left text-note"></p>
+                            <ul class="nav nav-pills nav-top navbar-right">
+                                <%--<li class="dropdown langs">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="images/flags/en.gif" alt="English">
+                                        <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">
+                                            <img src="images/flags/ar.gif" alt="AR"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/ca.gif" alt="CA"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/de.gif" alt="DE"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/es.gif" alt="ES"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/et.gif" alt="ET"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/fa.gif" alt="FA"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/fr.gif" alt="FR"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/flags/ja.gif" alt="JA"></a></li>
+                                    </ul>
+                                </li>--%>
+                                <li class="dropdown my-account">
+
+                                    <a id="dp_account" runat="server" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a id="a1" runat="server" href="myprofile.aspx">My Profile</a></li>
+                                        <li><a href="editprofile.aspx" id="a2" runat="server">Edit Profile</a></li>
+                                        <li><a href="change_pwd.aspx" id="a3" runat="server">Change Password</a></li>
+                                        <li><a href="myorder.aspx" id="a4" runat="server">My Orders</a></li>
+                                        <li>
+                                            <asp:LinkButton ID="logout" runat="server" OnClick="logout_Click">Logout</asp:LinkButton></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown menu-shop" id="cart" runat="server">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i>
+                                        <span class="shopping-bag">
+                                            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></span>
+
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <h3>Recently added item(<asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>)</h3>
+                                        <ul class="list-unstyled list-thumbs-pro">
+                                            <asp:HiddenField ID="HiddenField1" runat="server" />
+                                            <asp:Repeater ID="Repeater3" runat="server">
+                                                <ItemTemplate>
+                                                    <li class="product">
+                                                        <div class="product-thumb-info">
+                                                            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="product-remove" CommandArgument='<%# Eval("Id") %>' CommandName="delete_cart" OnCommand="LinkButton3_Command"><i class="fa fa-trash-o"></i></asp:LinkButton>
+                                                            <div class="product-thumb-info-image">
+
+                                                                <asp:Image ID="Image1" runat="server" Width="60" ImageUrl='<%# string.Format("../admin/images/{0}",Eval("product_front"))  %>' />
+                                                            </div>
+
+                                                            <div class="product-thumb-info-content">
+
+                                                                <asp:Label ID="Label1" runat="server" Text='<%#Eval("name")  %>'></asp:Label><br />
+                                                                Rs.<asp:Label ID="Label3" runat="server" Text='<%#Eval("price")  %>'></asp:Label>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                        <ul class="list-inline cart-subtotals text-right">
+                                            <li class="cart-subtotal"><strong>total</strong></li>
+                                            <li class="price"><span class="amount"><strong>Rs.<asp:Label ID="total" runat="server" Text=""></asp:Label></strong></span></li>
+                                        </ul>
+                                        <div class="cart-buttons text-right">
+                                            <asp:Button ID="btn_view_cart" runat="server" Text="VIEW CART" CssClass="btn btn-white" OnClick="btn_view_cart_Click" />
+
+                                            <%--<asp:Button ID="btn_checkout" runat="server" Text="CHECKOUT" CssClass="btn btn-primary" OnClick="btn_checkout_Click" />--%>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <asp:HiddenField ID="HiddenField2" runat="server" />
+                    <nav class="navbar navbar-default navbar-main navbar-main-slide heta" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                <a class="logo" href="index-2.html">
+                                    <img src="images/logo1.png" alt="Tailorspoint" style="width: 160px;"></a>
+                            </div>
+                            <ul class="nav navbar-nav navbar-act pull-right">
+                                <li class="login"><a id="l" runat="server" href="javascript:void(0);"><i class="fa fa-user"></i></a></li>
+                                <li class="search"><a href="javascript:void(0);" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav pull-right ">
+                                    <li class="hetashah"><a href="Home.aspx" style="color: white; font-size: larger">Home</a>
+
+
+
+
+                                    </li>
+                                    <li class="dropdown megamenu hetashah"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white; font-size: larger">Shop Now</a>
+                                        <div class="dropdown-menu">
+                                            <div class="mega-menu-content">
+                                                <div class="row">
+                                                    <div class="col-md-4 hidden-sm hidden-xs menu-column" >
+                                                        <h3>Man Trends</h3>
+                                                          <marquee direction="up">
+                                                                 <ul class="list-unstyled sub-menu list-thumbs-pro" >
+                                                        
+                                                             <asp:Repeater ID="Repeater4" runat="server">
+                                                                <ItemTemplate>
+
+                                                         
+                                                            <li class="product" >
+                                                                <div class="product-thumb-info" >
+                                                                    <div class="product-thumb-info-image">
+                                                                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">
+                                                                       
+                                                                        <asp:Image ID="Image2" runat="server" Width="60" Height="85" ImageUrl='<%# string.Format("../admin/images/{0}",Eval("product_front"))  %>' />
+                                                                    </asp:LinkButton>
+                                                                            </div>
+
+                                                                    <div class="product-thumb-info-content">
+                                                                        <h4>
+                                                                            <asp:Label ID="lbl_cat" runat="server" Text='<%#Eval("cloth_id")  %>' Visible="false"></asp:Label>
+                                                                            <asp:Label ID="lbl_pro" runat="server" Text='<%#Eval("product_id")  %>' Visible="false"></asp:Label>
+                                                                            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><%#Eval("name")  %></asp:LinkButton></h4>
+                                                                        <span class="price">Rs.<%#Eval("price")  %></span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                 
+                                                             </ItemTemplate>
+                                                            </asp:Repeater>
+                                                              
+                                                        </ul>
+                                                       </marquee>  
+                                                     
+                                                    </div>
+                                                    <div class="col-md-2 menu-column" style="height: 300px; width: 200px">
+                                                        <h3>Man</h3>
+                                                        <ul class="list-unstyled sub-menu">
+                                                            <asp:Repeater ID="Repeater1" runat="server">
+                                                                <ItemTemplate>
+                                                                    <li>
+                                                                        <asp:Label ID="lbl_man" runat="server" Text='<%# Eval("Id") %>' Visible="false"></asp:Label>
+                                                                        <asp:LinkButton ID="LinkButton1" runat="server" Text='<%# Eval("cloth_category") %>' OnClick="LinkButton1_Click"></asp:LinkButton></li>
+                                                                </ItemTemplate>
+                                                            </asp:Repeater>
+                                                            <%-- <li><a href="#">Jackets</a></li>
+                                                            <li><a href="#">Blazers</a></li>
+                                                            <li><a href="#">Suits</a></li>
+                                                            <li><a href="#">Trousers</a></li>
+                                                            <li><a href="#">Jeans</a></li>
+                                                            <li><a href="#">Shirts</a></li>
+                                                            <li><a href="#">Sweatshirts &amp; Hoodies</a></li>
+                                                            <li><a href="#">Swimwear</a></li>
+                                                            <li><a href="#">Accessories</a></li>--%>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="col-md-2 menu-column" style="height: 300px; width: 200px">
+                                                        <h3>Woman</h3>
+                                                        <ul class="list-unstyled sub-menu">
+                                                            <asp:Repeater ID="Repeater2" runat="server">
+                                                                <ItemTemplate>
+                                                                    <li>
+                                                                        <asp:Label ID="lbl_woman" runat="server" Text='<%# Eval("Id") %>' Visible="false"></asp:Label>
+                                                                        <asp:LinkButton ID="LinkButton2" runat="server" Text='<%# Eval("cloth_category") %>' OnClick="LinkButton2_Click"></asp:LinkButton>
+                                                                    </li>
+
+                                                                </ItemTemplate>
+                                                            </asp:Repeater>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 hidden-sm hidden-xs menu-column" >
+                                                        <h3>Woman Trends</h3>
+                                                        <marquee direction="up" scrolldelay="150"> 
+                                                        <ul class="list-unstyled sub-menu list-thumbs-pro">
+                                                            <asp:Repeater ID="Repeater5" runat="server">
+                                                                <ItemTemplate>
+
+                                                           
+                                                            <li class="product" >
+                                                                <div class="product-thumb-info" >
+                                                                    <div class="product-thumb-info-image">
+                                                                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">
+                                                                       
+                                                                        <asp:Image ID="Image2" runat="server" Width="60" Height="85" ImageUrl='<%# string.Format("../admin/images/{0}",Eval("product_front"))  %>' />
+                                                                    </asp:LinkButton>
+                                                                            </div>
+
+                                                                    <div class="product-thumb-info-content">
+                                                                        <h4>
+                                                                            <asp:Label ID="lbl_cat" runat="server" Text='<%#Eval("cloth_id")  %>' Visible="false"></asp:Label>
+                                                                            <asp:Label ID="lbl_pro" runat="server" Text='<%#Eval("product_id")  %>' Visible="false"></asp:Label>
+                                                                            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"><%#Eval("name")  %></asp:LinkButton></h4>
+                                                                        <span class="price">Rs.<%#Eval("price")  %></span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                 
+                                                             </ItemTemplate>
+                                                            </asp:Repeater>
+                                                        </ul>
+                                                              </marquee>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hetashah"><a href="About.aspx" style="color: white; font-size: larger">About Tailospoint</a></li>
+                                    <%--                                    <li class="hetashah"><a href="#" style="color:white;font-size:larger">About Tailospoint</a>--%>
+
+                                    </li>
+                                    <li class="hetashah"><a href="contact.aspx" style="color: white; font-size: larger">Contact</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                        <!--/.container-fluid -->
+                    </nav>
+                </header>
+
+                <!-- Begin Login -->
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <%-- <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>--%>
+                <div class="login-wrapper">
+                    <div id="form-login" role="form">
+                        <h4>Login</h4>
+                        <p>If you're a member, login here.</p>
+                        <div class="form-group">
+
+                            <asp:Label ID="lbl_username" runat="server" Text="Email id" for="inputusername"></asp:Label>
+                            <asp:TextBox ID="txt_username" runat="server" CssClass="form-control input-lg" placeholder="Email id" TextMode="Email"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Put Something !" ForeColor="red" ValidationGroup="x" ControlToValidate="txt_username"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="form-group">
+                            <asp:Label ID="lbl_password" runat="server" Text="Password" for="inputpassword"></asp:Label>
+                            <asp:TextBox ID="txt_password" runat="server" CssClass="form-control input-lg" placeholder="Password" TextMode="Password"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Put Something !" ForeColor="red" ValidationGroup="x" ControlToValidate="txt_password"></asp:RequiredFieldValidator>
+                        </div>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="regestration.aspx">Create new account</a></li>
+                            <li><a href="foregt_pwd.aspx">Request new password</a></li>
+                            <div class="x_content">
+                            </div>
+                        </ul>
+                        <asp:Label ID="lbl_invalid" runat="server" Text=""></asp:Label><br />
+                        <asp:Button ID="btn_submit" runat="server" Text="Log in" CssClass="btn btn-white" ValidationGroup="x" OnClick="btn_submit_Click" />
+
+                    </div>
+                </div>
+                <%--  </ContentTemplate>
+                </asp:UpdatePanel>--%>
+                <!-- End Login -->
+
+
+                <!-- Begin Main -->
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+
+                <!-- End Main -->
+
+                <!-- Begin footer -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="upper-foot">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                    <h2>Contact detail</h2>
+                                    <address>
+                                        <i class="fa fa-map-marker"></i>No.14,Pratham Mangal Complex.<br>
+                                        Near Vasna Bus stand,Ahmedabad.<br>
+                                        <i class="fa fa-phone"></i>Phone. (079)-26602889<br>
+
+                                        <i class="fa fa-envelope"></i>E-mail. <a href="mailto:#">b_tailor@gmail.com</a>
+                                    </address>
+                                </div>
+                                <div class="col-xs-5 col-sm-4">
+                                    <asp:Image ID="Image3" runat="server" ImageUrl="images/tailoring-service.png" CssClass="img-responsive"></asp:Image>
+
+                                </div>
+                                <div class="col-xs-3 col-sm-4" style="padding-left:10em;">
+                                    <h2>Useful links</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="faq.aspx">FAQs</a></li>
+                                        <li><a href="privacy_policy.aspx">Privacy Policy</a></li>
+                                        <li><a href="shipping_return.aspx">Shipping & returns</a></li>
+                                        <li><a href="terms_condition.aspx">Terms and Conditions</a></li>
+                                        <li><a href="About.aspx">About Tailorspoint</a></li>
+                                         <li><a href="feedback.aspx">Feedback</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="below-foot">
+                            <div class="row">
+                                <div class="col-xs-6 copyrights">
+                                    <p>
+                                        Copyright © 2017 Tailorspoint. Designed by <a href="http://pixelgeeklab.com/">Amisha & Heta</a><br>
+                                        All rights reserved.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End footer -->
+            </div>
+
+            <!-- Begin Quickview -->
+            <div class="modal fade quickview-wrapper" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <div class="product-detail">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="product-preview">
+                                        <ul class="bxslider" id="slider1">
+                                            <li>
+                                                <img alt="" class="img-responsive" src="images/content/products/product-1.jpg"></li>
+                                            <li>
+                                                <img alt="" class="img-responsive" src="images/content/products/product-1-1.jpg"></li>
+                                            <li>
+                                                <img alt="" class="img-responsive" src="images/content/products/product-1-2.jpg"></li>
+                                            <li>
+                                                <img alt="" class="img-responsive" src="images/content/products/product-1-3.jpg"></li>
+                                            <li>
+                                                <img alt="" class="img-responsive" src="images/content/products/product-1-4.jpg"></li>
+                                        </ul>
+
+                                        <ul class="list-inline bx-pager">
+                                            <li><a data-slide-index="0" href="#">
+                                                <img alt="" class="img-responsive" src="images/content/products/product-thumb.jpg"></a></li>
+                                            <li><a data-slide-index="1" href="#">
+                                                <img alt="" class="img-responsive" src="images/content/products/product-thumb-1.jpg"></a></li>
+                                            <li><a data-slide-index="2" href="#">
+                                                <img alt="" class="img-responsive" src="images/content/products/product-thumb-2.jpg"></a></li>
+                                            <li><a data-slide-index="3" href="#">
+                                                <img alt="" class="img-responsive" src="images/content/products/product-thumb-3.jpg"></a></li>
+                                            <li><a data-slide-index="4" href="#">
+                                                <img alt="" class="img-responsive" src="images/content/products/product-thumb-4.jpg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="summary entry-summary">
+
+                                        <h3>Denim Trousers with faux leather details</h3>
+
+                                        <div class="reviews-counter clearfix">
+                                            <div class="rating five-stars pull-left">
+                                                <div class="star-rating"></div>
+                                                <div class="star-bg"></div>
+                                            </div>
+                                            <span>3 Reviews</span>
+                                        </div>
+
+                                        <p class="price">
+                                            <span class="amount">$29.99</span>
+                                        </p>
+
+                                        <ul class="list-inline list-select clearfix">
+                                            <li>
+                                                <div class="list-sort">
+                                                    <select class="formDropdown">
+                                                        <option>Select Size</option>
+                                                        <option>XS</option>
+                                                        <option>S</option>
+                                                        <option>M</option>
+                                                        <option>L</option>
+                                                        <option>XL</option>
+                                                        <option>XXL</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="color"><a href="#" class="color1"></a></li>
+                                            <li class="color"><a href="#" class="color2"></a></li>
+                                            <li class="color"><a href="#" class="color3"></a></li>
+                                            <li class="color"><a href="#" class="color4"></a></li>
+                                        </ul>
+
+                                        <form method="post" class="cart">
+                                            <div class="quantity pull-left">
+                                                <input type="button" class="minus" value="-">
+                                                <input type="text" class="input-text qty" title="Qty" value="1" name="quantity" min="1" step="1">
+                                                <input type="button" class="plus" value="+">
+                                            </div>
+                                            <a href="#" class="btn btn-grey">
+                                                <span><i class="fa fa-heart"></i></span>
+                                            </a>
+                                            <button href="#" class="btn btn-primary btn-icon"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                        </form>
+
+                                        <ul class="list-unstyled product-meta">
+                                            <li>Sku: 54329843</li>
+                                            <li>Categories: <a href="#">Leather</a> <a href="#">Jeans</a> <a href="#">Men</a></li>
+                                            <li>Tags: <a href="#">Shoes</a> <a href="#">Jeans</a> <a href="#">Men</a> <a href="#">T-shirt</a></li>
+                                        </ul>
+
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Description</a> </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <p>Korem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. qui dolorem ipsum quia dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Addition Information</a> </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Reviews (3)</a> </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body post-comments">
+                                                        <ul class="comments">
+                                                            <li>
+                                                                <div class="comment">
+                                                                    <div class="img-circle">
+                                                                        <img class="avatar" width="50" alt="" src="images/content/blog/avatar.png">
+                                                                    </div>
+                                                                    <div class="comment-block">
+                                                                        <span class="comment-by"><strong>Frank Reman</strong></span>
+                                                                        <span class="date"><small><i class="fa fa-clock-o"></i>January 12, 2013</small></span>
+                                                                        <p>Lorem ipsum dolor sit amet.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="comment">
+                                                                    <div class="img-circle">
+                                                                        <img class="avatar" width="50" alt="" src="images/content/blog/avatar.png">
+                                                                    </div>
+                                                                    <div class="comment-block">
+                                                                        <span class="comment-by"><strong>Frank Reman</strong></span>
+                                                                        <span class="date"><small><i class="fa fa-clock-o"></i>July 11, 2014</small></span>
+                                                                        <p>Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae</p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="comment">
+                                                                    <div class="img-circle">
+                                                                        <img class="avatar" width="50" alt="" src="images/content/blog/avatar.png">
+                                                                    </div>
+                                                                    <div class="comment-block">
+                                                                        <span class="comment-by"><strong>Frank Reman</strong></span>
+                                                                        <span class="date"><small><i class="fa fa-clock-o"></i>July 11, 2014</small></span>
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Quickview -->
+            <asp:Label ID="txt" runat="server" Text="Label" Visible="false"></asp:Label>
+            <!-- Begin Search -->
+            <div class="modal fade bs-example-modal-lg search-wrapper" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <p class="clearfix">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        </p>
+                        <div class="form-inline form-search">
+                            <div class="form-group">
+                                <label class="sr-only" for="textsearch">Enter text search</label>
+                                <asp:TextBox ID="textsearch" runat="server" ClientIDMode="Static" CssClass="form-control input-lg" placeholder="Enter text search"></asp:TextBox>
+                            </div>
+                            <%--<button type="submit" class="btn btn-white">Search</button>--%>
+                            <asp:Button ID="btnsearch" runat="server" Text="Search" CssClass="btn btn-white" OnClick="btnsearch_Click" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search -->
+
+            <!-- Begin Style Switcher -->
+            <div id="style-switcher">
+                <div id="toggle_button"><a href="#"><i class="fa fa-pencil"></i></a></div>
+                <div id="style-switcher-menu">
+                    <h4 class="text-center">Style Switcher</h4>
+
+                    <div class="segment">
+                        <ul class="theme layouts">
+                            <li data-layout="boxed" class="btn btn-sm btn-black">Boxed</li>
+                            <li data-layout="widescreen" class="btn btn-black btn-sm btn-active">Widescreen</li>
+                        </ul>
+                    </div>
+                    <div class="segment">
+                        <div id="reset"><a href="#" class="btn btn-sm btn-greyer reset">Reset</a> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Style Switcher -->
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="vendor/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+            <script src="bootstrap/js/bootstrap-hover-dropdown.min.js"></script>
+            <script src="vendor/owl-carousel/owl.carousel.js"></script>
+            <script src="vendor/modernizr.custom.js"></script>
+            <script src="vendor/jquery.stellar.js"></script>
+            <script src="vendor/imagesloaded.pkgd.min.js"></script>
+            <script src="vendor/masonry.pkgd.min.js"></script>
+            <script src="vendor/jquery.pricefilter.js"></script>
+            <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
+            <script src="vendor/mediaelement-and-player.js"></script>
+            <script src="vendor/waypoints.min.js"></script>
+            <script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+
+            <!-- Theme Initializer -->
+            <script src="js/theme.plugins.js"></script>
+            <script src="js/theme.js"></script>
+
+            <!-- Style Switcher -->
+            <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
+
+
+
+
+        </div>
+    </form>
+</body>
+</html>
