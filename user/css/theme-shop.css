@@ -1,0 +1,602 @@
+/* line 4, ../sass/theme-shop.scss */
+.toolbar {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 50px;
+}
+/* line 7, ../sass/theme-shop.scss */
+.toolbar p {
+  line-height: 40px;
+  margin: 0;
+}
+
+/* Filter By Price */
+/* line 14, ../sass/theme-shop.scss */
+.filter-blk h4 {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  margin: 0 0 30px;
+}
+
+/* line 19, ../sass/theme-shop.scss */
+.padding-range {
+  padding: 0 8px;
+}
+
+/* line 21, ../sass/theme-shop.scss */
+#price-range {
+  display: block;
+  position: relative;
+}
+/* line 24, ../sass/theme-shop.scss */
+#price-range input, #price-range label {
+  color: #333333;
+  float: left;
+  font-family: Roboto Slab, serif;
+  font-size: .928em;
+}
+/* line 30, ../sass/theme-shop.scss */
+#price-range input {
+  padding: 0;
+  background: 0;
+  border: 0;
+  margin: 6px 0 0 4px;
+  display: inline-block;
+  width: 100px;
+}
+/* line 39, ../sass/theme-shop.scss */
+#price-range label {
+  margin: 6px 0 0 0;
+}
+/* line 42, ../sass/theme-shop.scss */
+#price-range p {
+  padding: 20px 0 0;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 47, ../sass/theme-shop.scss */
+#price-range .ui-slider {
+  position: relative;
+  text-align: left;
+}
+/* line 51, ../sass/theme-shop.scss */
+#price-range .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 13px;
+  height: 13px;
+  margin: -4px 0 0 -8px;
+  cursor: w-resize;
+}
+/* line 60, ../sass/theme-shop.scss */
+#price-range .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  height: 5px;
+  display: block;
+  border: 0;
+  background-position: 0;
+}
+/* line 69, ../sass/theme-shop.scss */
+#price-range .ui-widget-content {
+  background-color: #ecedef;
+  border-radius: 25px;
+}
+/* line 78, ../sass/theme-shop.scss */
+#price-range .ui-state-default {
+  background: #ccc;
+  border-radius: 50%;
+}
+/* line 84, ../sass/theme-shop.scss */
+#price-range .ui-slider.ui-state-disabled .ui-slider-handle,
+#price-range .ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+/* line 85, ../sass/theme-shop.scss */
+#price-range .ui-slider-horizontal {
+  height: 5px;
+}
+/* line 86, ../sass/theme-shop.scss */
+#price-range .ui-slider-horizontal .ui-slider-range {
+  background-color: #1abc9c;
+  top: 0;
+  height: 100%;
+}
+/* line 87, ../sass/theme-shop.scss */
+#price-range .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+/* line 88, ../sass/theme-shop.scss */
+#price-range .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* line 91, ../sass/theme-shop.scss */
+#slider-range {
+  margin: 0 0 16px 0;
+}
+
+/* line 93, ../sass/theme-shop.scss */
+.list-cat {
+  font-family: Roboto Slab, serif;
+}
+/* line 95, ../sass/theme-shop.scss */
+.list-cat li {
+  line-height: 2;
+}
+
+/* line 101, ../sass/theme-shop.scss */
+.block .list-thumbs-pro h4 {
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 105, ../sass/theme-shop.scss */
+.block .list-thumbs-pro .product + .product {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* line 111, ../sass/theme-shop.scss */
+.list-sort {
+  overflow: hidden;
+}
+
+/* product-detail */
+/* line 117, ../sass/theme-shop.scss */
+.quickview-wrapper button.close {
+  height: 30px;
+  margin: 20px 20px 0 0;
+  width: 30px;
+}
+/* line 122, ../sass/theme-shop.scss */
+.quickview-wrapper .modal-content {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 129, ../sass/theme-shop.scss */
+.product-detail {
+  padding: 50px 50px 0;
+}
+
+/* bxslider */
+/* line 134, ../sass/theme-shop.scss */
+.product-preview {
+  margin-bottom: 50px;
+}
+
+/* line 138, ../sass/theme-shop.scss */
+.bx-wrapper {
+  margin-bottom: 20px;
+}
+/* line 140, ../sass/theme-shop.scss */
+.bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+  left: 0;
+  height: 700px;
+}
+
+/* line 148, ../sass/theme-shop.scss */
+.bxslider {
+  padding: 0;
+}
+/* line 150, ../sass/theme-shop.scss */
+.bxslider > li {
+  list-style: none;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+
+/* line 156, ../sass/theme-shop.scss */
+.bx-pager {
+  margin: 0 -10px;
+  overflow: hidden;
+}
+/* line 159, ../sass/theme-shop.scss */
+.bx-pager li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 20%;
+}
+
+/* line 167, ../sass/theme-shop.scss */
+.bx-clone {
+  display: none;
+}
+
+/* flexslider */
+/* line 172, ../sass/theme-shop.scss */
+.flexslider {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* line 179, ../sass/theme-shop.scss */
+.flex-viewport {
+  margin-bottom: 20px;
+}
+
+/* line 184, ../sass/theme-shop.scss */
+.flex-control-thumbs li {
+  width: 20%;
+}
+
+/* line 189, ../sass/theme-shop.scss */
+.flex-direction-nav {
+  display: none;
+}
+
+/* summary */
+/* line 195, ../sass/theme-shop.scss */
+.summary h3, .summary .price {
+  font-family: Roboto Slab, serif;
+}
+/* line 198, ../sass/theme-shop.scss */
+.summary h3 {
+  margin: 0 0 10px;
+}
+/* line 201, ../sass/theme-shop.scss */
+.summary .price {
+  font-size: 1.714em;
+  margin-bottom: 30px;
+}
+
+/* Star Rating */
+/* line 208, ../sass/theme-shop.scss */
+.reviews-counter {
+  margin-bottom: 5px;
+}
+
+/* line 211, ../sass/theme-shop.scss */
+.rating {
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 25px;
+  display: block;
+}
+
+/* line 219, ../sass/theme-shop.scss */
+.star-rating {
+  position: relative;
+  width: inherit;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 227, ../sass/theme-shop.scss */
+.rating.five-stars .star-rating:after {
+  width: 100%;
+}
+
+/* line 228, ../sass/theme-shop.scss */
+.rating.four-stars .star-rating:after {
+  width: 80%;
+}
+
+/* line 229, ../sass/theme-shop.scss */
+.rating.three-stars .star-rating:after {
+  width: 60%;
+}
+
+/* line 230, ../sass/theme-shop.scss */
+.rating.two-stars .star-rating:after {
+  width: 40%;
+}
+
+/* line 231, ../sass/theme-shop.scss */
+.rating.one-stars .star-rating:after {
+  width: 20%;
+}
+
+/* line 233, ../sass/theme-shop.scss */
+.star-rating:after {
+  content: "    ";
+  font-family: "FontAwesome";
+  color: black;
+  display: block;
+  position: absolute;
+  letter-spacing: -0.5px;
+}
+
+/* line 242, ../sass/theme-shop.scss */
+.rating .star-bg:after {
+  content: "    ";
+  font-family: "FontAwesome";
+  color: black;
+  display: block;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* list-select */
+/* line 255, ../sass/theme-shop.scss */
+.list-select li {
+  float: left;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+/* line 259, ../sass/theme-shop.scss */
+.list-select .formDropdown {
+  border-color: #333333;
+}
+/* line 262, ../sass/theme-shop.scss */
+.list-select .color {
+  border: 1px solid #dddddd;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 9px 9px 10px;
+}
+/* line 267, ../sass/theme-shop.scss */
+.list-select .color:hover {
+  border-color: #333333;
+}
+/* line 270, ../sass/theme-shop.scss */
+.list-select .color a {
+  background-color: black;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+/* line 276, ../sass/theme-shop.scss */
+.list-select .color .color1 {
+  background-color: #f64243;
+}
+/* line 279, ../sass/theme-shop.scss */
+.list-select .color .color2 {
+  background-color: #a57bcd;
+}
+/* line 282, ../sass/theme-shop.scss */
+.list-select .color .color3 {
+  background-color: #3598db;
+}
+/* line 285, ../sass/theme-shop.scss */
+.list-select .color .color4 {
+  background-color: #c2a772;
+}
+
+/* line 291, ../sass/theme-shop.scss */
+.cart {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  text-align: right;
+}
+/* line 297, ../sass/theme-shop.scss */
+.cart a {
+  margin-right: 6px;
+}
+
+/* line 303, ../sass/theme-shop.scss */
+.quantity input {
+  background: whitesmoke;
+  border: none;
+  float: left;
+  height: 50px;
+  text-align: center;
+}
+/* line 310, ../sass/theme-shop.scss */
+.quantity .qty {
+  width: 50px;
+}
+/* line 313, ../sass/theme-shop.scss */
+.quantity .minus {
+  margin-right: 1px;
+}
+/* line 316, ../sass/theme-shop.scss */
+.quantity .plus {
+  margin-left: 1px;
+}
+
+/* line 321, ../sass/theme-shop.scss */
+.product-meta {
+  font-size: .928em;
+  margin-bottom: 50px;
+}
+/* line 325, ../sass/theme-shop.scss */
+.product-meta a:after {
+  content: ",";
+}
+/* line 328, ../sass/theme-shop.scss */
+.product-meta a:last-child:after {
+  content: "";
+}
+
+/* line 334, ../sass/theme-shop.scss */
+.product-remove a {
+  color: #dddddd;
+}
+/* line 336, ../sass/theme-shop.scss */
+.product-remove a:hover, .product-remove a:focus {
+  color: #1abc9c;
+}
+
+/* line 342, ../sass/theme-shop.scss */
+.featured-boxes h3 {
+  font-family: Roboto Slab, serif;
+  font-size: 1em;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+/* line 350, ../sass/theme-shop.scss */
+.shop_table .product-remove a {
+  font-size: 1.3em;
+}
+/* line 353, ../sass/theme-shop.scss */
+.shop_table th {
+  background: #181818;
+  border: 1px solid #181818;
+  border-bottom: none;
+  color: white;
+  font-size: .928em;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+/* line 362, ../sass/theme-shop.scss */
+.shop_table td {
+  border: 1px solid #dddddd;
+  padding: 30px;
+}
+/* line 368, ../sass/theme-shop.scss */
+.shop_table .product-name,
+.shop_table .product-price,
+.shop_table .product-subtotal {
+  font-family: Roboto Slab, serif;
+}
+/* line 371, ../sass/theme-shop.scss */
+.shop_table .product-thumbnail {
+  border-right: none;
+  padding-right: 0;
+  width: 110px;
+}
+/* line 376, ../sass/theme-shop.scss */
+.shop_table .product-name {
+  border-left: none;
+}
+/* line 379, ../sass/theme-shop.scss */
+.shop_table .product-remove {
+  text-align: center;
+  width: 30px;
+}
+/* line 383, ../sass/theme-shop.scss */
+.shop_table .product-quantity {
+  width: 150px;
+}
+/* line 386, ../sass/theme-shop.scss */
+.shop_table td.product-quantity {
+  text-align: center;
+}
+/* line 389, ../sass/theme-shop.scss */
+.shop_table .quantity {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+}
+/* line 394, ../sass/theme-shop.scss */
+.shop_table td.product-subtotal {
+  color: #1abc9c;
+}
+
+/* line 399, ../sass/theme-shop.scss */
+.featured-box {
+  margin-bottom: 50px;
+}
+/* line 401, ../sass/theme-shop.scss */
+.featured-box h4 {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+/* Firefox select button fix */
+@-moz-document url-prefix() {
+  /* line 408, ../sass/theme-shop.scss */
+  .featured-box .formDropdown {
+    width: 111.5%;
+  }
+}
+
+/* line 413, ../sass/theme-shop.scss */
+.featured-box-secondary {
+  font-size: .928em;
+}
+/* line 415, ../sass/theme-shop.scss */
+.featured-box-secondary input.form-control {
+  height: 37px;
+}
+/* line 418, ../sass/theme-shop.scss */
+.featured-box-secondary .formDropdown {
+  height: 37px;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+/* line 423, ../sass/theme-shop.scss */
+.featured-box-secondary p {
+  margin-bottom: 15px;
+}
+
+/* line 428, ../sass/theme-shop.scss */
+.cart-totals {
+  margin-bottom: 15px;
+}
+/* line 430, ../sass/theme-shop.scss */
+.cart-totals th {
+  font-weight: 400;
+}
+/* line 433, ../sass/theme-shop.scss */
+.cart-totals td {
+  text-align: right;
+}
+/* line 436, ../sass/theme-shop.scss */
+.cart-totals th, .cart-totals td {
+  border-top: 1px solid #dddddd;
+  padding: 14px 0;
+  vertical-align: top;
+}
+/* line 441, ../sass/theme-shop.scss */
+.cart-totals tr:first-child th, .cart-totals tr:first-child td {
+  border-top: none;
+}
+/* line 444, ../sass/theme-shop.scss */
+.cart-totals .cart-subtotal:first-child th, .cart-totals .cart-subtotal:first-child td {
+  padding-top: 0;
+}
+/* line 447, ../sass/theme-shop.scss */
+.cart-totals .total .amount {
+  color: #1abc9c;
+}
+/* line 451, ../sass/theme-shop.scss */
+.cart-totals .product-name,
+.cart-totals .product-price {
+  font-family: Roboto Slab, serif;
+  font-size: 1.076em;
+}
+
+/* line 458, ../sass/theme-shop.scss */
+.featured-box-cart .form-horizontal .control-label {
+  text-align: left;
+}
+
+/* Firefox select button fix */
+@-moz-document url-prefix() {
+  /* line 465, ../sass/theme-shop.scss */
+  .featured-box-cart .formDropdown {
+    width: 111.9%;
+  }
+}
+
+/* product-list */
+/* line 471, ../sass/theme-shop.scss */
+.product-list {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+}
+/* line 475, ../sass/theme-shop.scss */
+.product-list .reviews-counter {
+  margin-bottom: 15px;
+}
+/* line 478, ../sass/theme-shop.scss */
+.product-list h4, .product-list .price {
+  font-size: 1.285em;
+}
+/* line 481, ../sass/theme-shop.scss */
+.product-list h4 {
+  margin-bottom: 10px;
+}
