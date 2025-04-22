@@ -66,11 +66,27 @@ To provide an efficient, accessible, and user-friendly online tailoring service 
 
 ---
 
-## 📊 Visual Features
+## 🖼️ Visual Features
 
 Here are some visualization from the project:
 
+### 🔐 Login Page
+![Login Page](./assets/Login.png)
 
+### 📊 Admin Dashboard
+![Admin Dashboard](./assets/Admin.png)
+
+### 🛒 Customer
+![Customer](./assets/SHOP NOW.png)
+
+### 🛍️ Product Details
+![Product Details](./assets/ProductDetail.png)
+
+### 📍 Doorstep Measurements
+![Doorstep Measurements](./assets/DoorstepMes.png)
+
+### 🧺 Shopping Bag
+![Shopping Bag](./assets/SHOPPING BAG.png)
 
 ---
 
