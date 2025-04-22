@@ -77,7 +77,7 @@ Here are some visualization from the project:
 ![Admin Dashboard](./assets/Admin.png)
 
 ### 🛒 Customer
-![Customer](./assets/SHOP NOW.png)
+![Customer](https://github.com/amisha7/TailorsPoint/blob/b9c6468675560c5660186d3d6074b00702880990/assets/SHOP%20NOW.png)
 
 ### 🛍️ Product Details
 ![Product Details](./assets/ProductDetail.png)
@@ -86,7 +86,7 @@ Here are some visualization from the project:
 ![Doorstep Measurements](./assets/DoorstepMes.png)
 
 ### 🧺 Shopping Bag
-![Shopping Bag](./assets/SHOPPING BAG.png)
+![Shopping Bag](https://github.com/amisha7/TailorsPoint/blob/b9c6468675560c5660186d3d6074b00702880990/assets/SHOPPING%20BAG.png)
 
 ---
 
